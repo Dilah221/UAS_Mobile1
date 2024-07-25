@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrasiScreen"
+    android:background="@color/aqua">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/regisLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo"
+            android:minWidth="200dp"
+            android:minHeight="200dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"/>
+
+        <TextView
+            android:id="@+id/teUserRegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regisLogo"
+            android:text="User Name!"
+            android:gravity="left"
+            android:textSize="10pt"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="12dp"/>
+
+        <EditText
+            android:id="@+id/edUserRegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teUserRegis"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittex_corner"
+            android:padding="20dp"
+            android:inputType="text"
+            android:hint="User Name"/>
+
+        <TextView
+            android:id="@+id/tePasRegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edUserRegis"
+            android:text="Password!"
+            android:gravity="left"
+            android:textSize="10pt"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"/>
+
+        <EditText
+            android:id="@+id/edPasRegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tePasRegis"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittex_corner"
+            android:padding="20dp"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+
+        <TextView
+            android:id="@+id/teEmailRegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edPasRegis"
+            android:text="Email!"
+            android:gravity="left"
+            android:textSize="10pt"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"/>
+
+        <EditText
+            android:id="@+id/edEmailRegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teEmailRegis"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittex_corner"
+            android:padding="20dp"
+            android:hint="Email"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/buLoginRegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edEmailRegis"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:text="SING UP!"
+            android:textSize="20pt" />
+
+    </RelativeLayout>
+</LinearLayout>

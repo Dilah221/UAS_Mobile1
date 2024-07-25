@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".new_add"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=">New Add"
+            android:textSize="13pt"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Relative1"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/teKode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KODE"
+            android:textSize="13pt"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/edKode"
+            android:layout_below="@+id/teKode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Kode"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/teNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAMA"
+            android:textSize="13pt"
+            android:layout_below="@id/edKode"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/edNama"
+            android:layout_below="@+id/teNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Nama"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/teKondisi"
+            android:layout_below="@id/edNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KONDISI"
+            android:textSize="13pt"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/edKondisi"
+            android:layout_below="@+id/teKondisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Kondisi"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/teEvident"
+            android:layout_below="@+id/edKondisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EVIDENT"
+            android:textSize="13pt"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/edEvident"
+            android:layout_below="@+id/teEvident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Evident"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/imageEvident"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edEvident"
+            android:text="+Poto"
+            android:textSize="12pt"/>
+
+        <Button
+            android:id="@+id/Simpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edEvident"
+            android:layout_marginTop="70dp"
+            android:text="Simpan"
+            android:textSize="12pt"/>
+    </RelativeLayout>
+</RelativeLayout>
